@@ -1,23 +1,3 @@
-/*
-
-onload
-num 1 random
-num 2 random
-
-function 
-if num 1 === 1 img src dice1.png
-if num 2 === 3 img src dice2.png
-
-function*****
-
-if num 1 > num 2 
-print player 1 wins
-else print player 2 wins
-
-
-*/
-
-
 const numOne = Math.floor(Math.random() * 6 + 1);
 const numTwo = Math.floor(Math.random() * 6 + 1);
 const diceOne = document.getElementById('img1');
