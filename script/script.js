@@ -14,31 +14,14 @@ console.log(numTwo);
         winner.innerText = 'Draw!';
     }
 
-    if (numOne === 1) {
-        diceOne.src = 'images/dice1.png';
-    } else if (numOne === 2){
-        diceOne.src = 'images/dice2.png';
-    } else if (numOne === 3){
-        diceOne.src = 'images/dice3.png';
-    } else if (numOne === 4){
-        diceOne.src = 'images/dice4.png';
-    } else if (numOne === 5){
-        diceOne.src = 'images/dice5.png';
+    if (numOne >= 1 && numOne < 6) {
+        diceOne.src = `images/dice${numOne}.png`;
     } else {
         diceOne.src = 'images/dice6.png';
     }
 
-
-    if(numTwo === 1) {
-        diceTwo.src = 'images/dice1.png';
-    } else if(numTwo === 2){
-        diceTwo.src = 'images/dice2.png';
-    } else if(numTwo === 3){
-        diceTwo.src = 'images/dice3.png';
-    }else if(numTwo === 4){
-        diceTwo.src = 'images/dice4.png';
-    }else if(numTwo === 5){
-        diceTwo.src = 'images/dice5.png';
+    if(numTwo >= 1 && numTwo < 6) {
+        diceTwo.src = `images/dice${numOne}.png`;
     }else {
         diceTwo.src = 'images/dice6.png';
     }
